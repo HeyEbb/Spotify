@@ -37,5 +37,5 @@ h1 {
 }
 
 h2 {
-  @apply text-2xl font-bold text-balance;
+  @apply text-3xl font-bold text-balance;
 }
