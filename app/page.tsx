@@ -1,10 +1,13 @@
-import Image from "next/image";
 import {
   VscHome,
   VscChevronLeft,
   VscChevronRight,
   VscSearch,
 } from "react-icons/vsc";
+
+import MiniCard from "./components/mini-cards/MiniCard";
+import MadeForYou from "./components/made-for-you/MadeForYou";
+import YourLibrary from "./components/your-library/YourLibrary";
 
 export default function Home() {
   return (
@@ -34,14 +37,7 @@ export default function Home() {
                 Albums
               </button>
             </div>
-            {/* search */}
-            <div className="flex items-center mt-5">
-              <div className="bg-indigo-700 w-12 h-12 rounded-sm mr-4"></div>
-              <div className="flex flex-col">
-                <span className="font-semibold">Liked Songs</span>
-                <span className="text-neutral-500">Playlist - 54 Songs</span>
-              </div>
-            </div>
+            <YourLibrary />
           </div>
         </section>
       </div>
@@ -75,7 +71,10 @@ export default function Home() {
               <span>notifications profile</span>
             </div>
           </div>
-          <h2 className="mt-5">Good morning</h2>
+          <h3 className="mt-8 mb-4">Good morning</h3>
+          <MiniCard />
+          <h3 className="mt-8 mb-4">Made for you</h3>
+          <MadeForYou />
         </section>
       </div>
     </main>
