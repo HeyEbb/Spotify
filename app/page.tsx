@@ -12,28 +12,28 @@ import YourLibrary from "./components/your-library/YourLibrary";
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-row">
-      <div className="m-2 flex w-4/12 flex-col gap-2 xl:w-[600px]">
+      <div className="m-2 flex w-4/12 min-w-[300px] flex-col gap-2 xl:w-[500px]">
         <section className=" flex flex-col gap-6 rounded-xl bg-neutral-900 p-6">
-          <span className="flex items-center gap-5 text-lg font-semibold text-neutral-400">
-            <VscHome size={30} />
+          <span className="text-md flex items-center gap-5 font-semibold text-white">
+            <VscHome size={25} />
             Home
           </span>
-          <span className="flex items-center gap-5 text-lg font-semibold text-neutral-400">
-            <VscSearch size={30} />
+          <span className="text-md flex items-center gap-5 font-semibold text-neutral-400">
+            <VscSearch size={25} />
             Search
           </span>
         </section>
 
-        <section className=" h-full rounded-xl bg-neutral-900 p-6">
-          <span className="text-lg font-semibold text-neutral-400">
+        <section className="h-full rounded-xl bg-neutral-900 p-6">
+          <span className="text-md font-semibold text-neutral-400">
             Your library
           </span>
           <div className="flex flex-col">
             <div className="mt-4 flex gap-2">
-              <button className="rounded-full bg-neutral-700 px-4 py-2 text-sm">
+              <button className="rounded-full bg-neutral-700 px-4 py-2 text-xs">
                 Playlists
               </button>
-              <button className="rounded-full bg-neutral-700 px-4 py-2 text-sm">
+              <button className="rounded-full bg-neutral-700 px-4 py-2 text-xs">
                 Albums
               </button>
             </div>
@@ -43,7 +43,7 @@ export default function Home() {
       </div>
 
       <div className="me-3 mt-2 w-8/12 xl:w-full">
-        <section className="h-full rounded-xl bg-neutral-900 px-6 pt-3">
+        <section className="h-full rounded-xl bg-gradient-to-b from-[#242424] to-[#000] px-6 pt-3">
           <div className="flex w-full items-center justify-between">
             <div className="flex">
               <div className="flex items-center gap-2 pe-5">
@@ -71,12 +71,13 @@ export default function Home() {
               <span>notifications profile</span>
             </div>
           </div>
-          <h3 className="mt-8 mb-4">Good morning</h3>
+          <h3 className="mb-4 mt-8">Good morning</h3>
           <MiniCard />
-          <h3 className="mt-8 mb-4">Made for you</h3>
+          <h3 className="mb-4 mt-8">Made for you</h3>
           <MadeForYou />
         </section>
       </div>
+      <div className="fixed bottom-0 h-20 w-full bg-black">Here</div>
     </main>
   );
 }
