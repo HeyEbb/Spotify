@@ -43,7 +43,7 @@ export default function Home() {
       </div>
 
       <div className="me-3 mt-2 w-8/12 xl:w-full">
-        <section className="h-full rounded-xl bg-gradient-to-b from-[#242424] to-[#000] px-6 pt-3">
+        <section className="h-full rounded-xl bg-gradient-to-b from-[#242424] to-[#000] px-4 pt-3">
           <div className="flex w-full items-center justify-between">
             <div className="flex">
               <div className="flex items-center gap-2 pe-5">
@@ -62,10 +62,10 @@ export default function Home() {
             </div>
 
             <div className="flex h-10 gap-3">
-              <button className="rounded-full bg-white px-5 py-1 text-sm font-semibold text-black">
+              <button className="rounded-full bg-white px-4 h-8 text-sm font-semibold text-black">
                 Explore Premium
               </button>
-              <button className="rounded-full bg-black px-5 py-1 text-sm font-semibold text-white">
+              <button className="rounded-full bg-black px-4 h-8 text-sm font-semibold text-white">
                 Install app
               </button>
               <span>notifications profile</span>

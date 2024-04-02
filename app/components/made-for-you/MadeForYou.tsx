@@ -7,48 +7,35 @@ export default function MadeForYou() {
       description: "Your heavy rotation",
       color: "rgba(97, 97, 97, 0.25)",
       bgColor: "bg-red-500",
+      image: "/images/daily-mix-1.jpg",
     },
     {
       title: "Daily Mix 2",
       description: "Your heavy rotation",
       color: "rgba(97, 97, 97, 0.25)",
       bgColor: "bg-green-500",
+      image: "/images/daily-mix-1.jpg",
     },
     {
       title: "Daily Mix 3",
       description: "Your heavy rotation",
       color: "rgba(97, 97, 97, 0.25)",
       bgColor: "bg-blue-500",
+      image: "/images/daily-mix-1.jpg",
     },
     {
       title: "Daily Mix 4",
       description: "Your heavy rotation",
       color: "rgba(97, 97, 97, 0.25)",
       bgColor: "bg-yellow-500",
+      image: "/images/daily-mix-1.jpg",
     },
     {
       title: "Daily Mix 5",
       description: "Your heavy rotation",
       color: "rgba(97, 97, 97, 0.25)",
       bgColor: "bg-indigo-500",
-    },
-    {
-      title: "Daily Mix 3",
-      description: "Your heavy rotation",
-      color: "rgba(97, 97, 97, 0.25)",
-      bgColor: "bg-blue-500",
-    },
-    {
-      title: "Daily Mix 4",
-      description: "Your heavy rotation",
-      color: "rgba(97, 97, 97, 0.25)",
-      bgColor: "bg-yellow-500",
-    },
-    {
-      title: "Daily Mix 5",
-      description: "Your heavy rotation",
-      color: "rgba(97, 97, 97, 0.25)",
-      bgColor: "bg-indigo-500",
+      image: "/images/daily-mix-1.jpg",
     },
   ];
 
