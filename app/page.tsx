@@ -3,6 +3,7 @@ import {
   VscChevronLeft,
   VscChevronRight,
   VscSearch,
+  VscPlay,
 } from "react-icons/vsc";
 
 import MiniCard from "./components/mini-cards/MiniCard";
@@ -62,10 +63,10 @@ export default function Home() {
             </div>
 
             <div className="flex h-10 gap-3">
-              <button className="rounded-full bg-white px-4 h-8 text-sm font-semibold text-black">
+              <button className="h-8 rounded-full bg-white px-4 text-sm font-semibold text-black">
                 Explore Premium
               </button>
-              <button className="rounded-full bg-black px-4 h-8 text-sm font-semibold text-white">
+              <button className="h-8 rounded-full bg-black px-4 text-sm font-semibold text-white">
                 Install app
               </button>
               <span>notifications profile</span>
@@ -75,9 +76,30 @@ export default function Home() {
           <MiniCard />
           <h3 className="mb-4 mt-8">Made for you</h3>
           <MadeForYou />
+          <h3 className="mb-4 mt-8">Popular Radio</h3>
+          <MadeForYou />
         </section>
       </div>
-      <div className="fixed bottom-0 h-20 w-full bg-black">Here</div>
+      <div className="fixed bottom-0 flex h-20 w-full bg-black">
+        <div className="w-3/12 bg-red-500">1</div>
+        <div className="mb-2 mt-2 flex w-6/12 flex-col bg-orange-500">
+          <div className="flex h-2/3 justify-center bg-green-500">
+            <div className="flex w-96 justify-center bg-pink-500">
+              <div className="w-14 bg-red-500">shuffle</div>
+              <div className="w-14 bg-orange-500">back</div>
+              <div className="flex w-14 justify-center bg-yellow-500">
+                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-xl">
+                  <VscPlay />
+                </div>
+              </div>
+              <div className="w-14 bg-green-500">for</div>
+              <div className="w-14 bg-blue-500">loop</div>
+            </div>
+          </div>
+          <div className="h-1/3 bg-purple-500">2</div>
+        </div>
+        <div className="w-3/12 bg-yellow-500">3</div>
+      </div>
     </main>
   );
 }

@@ -13,9 +13,13 @@ export default function MadeForYou(props: MadeForYouProps) {
     <div className="">
       <div
         className="relative mb-2 w-full rounded "
-        style={{ paddingTop: "100%", backgroundImage: `url(${props.image})`}}
-      >
-      </div>
+        style={{
+          paddingTop: "100%",
+          backgroundImage: `url(${props.image})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      ></div>
       <div className="text-md font-light">{props.title}</div>
       <div className="text-xs text-neutral-400">{props.description}</div>
     </div>

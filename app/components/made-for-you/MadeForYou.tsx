@@ -37,6 +37,13 @@ export default function MadeForYou() {
       bgColor: "bg-indigo-500",
       image: "/images/daily-mix/dm-5.jpg",
     },
+    {
+      title: "Daily Mix 6",
+      description: "Your heavy rotation",
+      color: "rgba(97, 97, 97, 0.25)",
+      bgColor: "bg-indigo-500",
+      image: "/images/daily-mix/dm-6.jpg",
+    },
   ];
 
   return (
