@@ -9,6 +9,8 @@ import {
 import MiniCard from "./components/mini-cards/MiniCard";
 import MadeForYou from "./components/made-for-you/MadeForYou";
 import YourLibrary from "./components/your-library/YourLibrary";
+import { FaFastBackward, FaFastForward } from "react-icons/fa";
+import { FaRepeat, FaShuffle } from "react-icons/fa6";
 
 export default function Home() {
   return (
@@ -84,16 +86,16 @@ export default function Home() {
         <div className="w-3/12 bg-red-500">1</div>
         <div className="mb-2 mt-2 flex w-6/12 flex-col bg-orange-500">
           <div className="flex h-2/3 justify-center bg-green-500">
-            <div className="flex w-96 justify-center bg-pink-500">
-              <div className="w-14 bg-red-500">shuffle</div>
-              <div className="w-14 bg-orange-500">back</div>
-              <div className="flex w-14 justify-center bg-yellow-500">
-                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-xl">
+            <div className="flex w-60 justify-center bg-pink-500">
+              <div className="w-14 bg-red-500 flex justify-center items-center"><FaShuffle/></div>
+              <div className="w-14 bg-orange-500 flex justify-center items-center"><FaFastBackward/></div>
+              <div className="flex w-14 justify-center items-center bg-yellow-500 ">
+                <div className="flex h-8 w-8 items-center justify-center rounded-full bg-white text-xl ">
                   <VscPlay />
                 </div>
               </div>
-              <div className="w-14 bg-green-500">for</div>
-              <div className="w-14 bg-blue-500">loop</div>
+              <div className="w-14 bg-green-500 flex justify-center items-center"><FaFastForward/></div>
+              <div className="w-14 bg-blue-500 flex justify-center items-center"><FaRepeat/></div>
             </div>
           </div>
           <div className="h-1/3 bg-purple-500">2</div>
