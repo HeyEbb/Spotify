@@ -83,24 +83,34 @@ export default function Home() {
         </section>
       </div>
       <div className="fixed bottom-0 flex h-20 w-full bg-black">
-        <div className="w-3/12 bg-red-500">1</div>
-        <div className="mb-2 mt-2 flex w-6/12 flex-col bg-orange-500">
-          <div className="flex h-2/3 justify-center bg-green-500">
-            <div className="flex w-60 justify-center bg-pink-500">
-              <div className="w-14 bg-red-500 flex justify-center items-center"><FaShuffle/></div>
-              <div className="w-14 bg-orange-500 flex justify-center items-center"><FaFastBackward/></div>
-              <div className="flex w-14 justify-center items-center bg-yellow-500 ">
+        <div className="w-4/12 ">1</div>
+        <div className="mb-2 mt-2 flex w-5/12 flex-col ">
+          <div className="flex h-2/3 justify-center ">
+            <div className="flex w-64 justify-center ">
+              <div className="flex w-14 items-center justify-center">
+                <FaShuffle />
+              </div>
+              <div className="flex w-14 items-center justify-center">
+                <FaFastBackward />
+              </div>
+              <div className="flex w-14 items-center justify-center  ">
                 <div className="flex h-8 w-8 items-center justify-center rounded-full bg-white text-xl ">
                   <VscPlay />
                 </div>
               </div>
-              <div className="w-14 bg-green-500 flex justify-center items-center"><FaFastForward/></div>
-              <div className="w-14 bg-blue-500 flex justify-center items-center"><FaRepeat/></div>
+              <div className="flex  w-14 items-center justify-center">
+                <FaFastForward />
+              </div>
+              <div className="flex  w-14 items-center justify-center">
+                <FaRepeat />
+              </div>
             </div>
           </div>
-          <div className="h-1/3 bg-purple-500">2</div>
+          <div className="flex  h-1/3 items-center">
+            <div className="h-1 w-full rounded bg-neutral-600"></div>
+          </div>
         </div>
-        <div className="w-3/12 bg-yellow-500">3</div>
+        <div className="w-4/12 ">3</div>
       </div>
     </main>
   );
