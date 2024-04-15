@@ -41,5 +41,5 @@ h2 {
 }
 
 h3 {
-  @apply text-2xl font-bold text-balance;
+  @apply text-xl font-semibold text-balance;
 }
