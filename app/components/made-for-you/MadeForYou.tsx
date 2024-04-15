@@ -48,7 +48,7 @@ export default function MadeForYou() {
 
   return (
     <>
-      <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-6">
+      <div className="grid grid-cols-1 gap-6 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6">
         {madeForYou.map((card, index) => (
           <SingleMadeForYou
             key={index}
