@@ -47,10 +47,10 @@ const library = [
 
 export default function YourLibrary() {
   return (
-    <>
+    <div className="mt-5">
         {library.map((item, index) => (
             <SingleYourLibrary key={index} title={item.title} type={item.type} color={item.color} NoSongs={item.NoSongs} />
         ))} 
-    </>
+    </div>
   )
 }

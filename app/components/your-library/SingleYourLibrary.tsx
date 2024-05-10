@@ -7,7 +7,7 @@ interface SingleYourLibraryProps {
 
 export default function SingleYourLibrary(props: SingleYourLibraryProps) {
   return (
-    <div className="mt-5 flex items-center">
+    <div className="flex items-center hover:bg-neutral-800 p-2 rounded-md">
       <div className="mr-4 h-12 w-12 rounded-sm bg-indigo-700"></div>
       <div className="flex flex-col">
         <span className="font-semibold">{props.title}</span>

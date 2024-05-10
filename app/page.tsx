@@ -3,6 +3,8 @@ import {
   VscChevronLeft,
   VscChevronRight,
   VscSearch,
+  VscAdd,
+  VscArrowRight,
 } from "react-icons/vsc";
 
 import { IoPlayCircle, IoPauseCircle } from "react-icons/io5";
@@ -29,9 +31,15 @@ export default function Home() {
         </section>
 
         <section className="h-full rounded-xl bg-neutral-900 p-6">
-          <span className="text-md font-semibold text-neutral-400">
-            Your library
-          </span>
+          <div className="flex w-full">
+            <span className="text-md w-10/12 font-semibold text-neutral-400">
+              Your Library
+            </span>
+            <span className="flex w-2/12 justify-between items-center text-neutral-400">
+              <VscAdd size={18} className="hover:text-neutral-100 transition duration-300 ease-in-out"/>
+              <VscArrowRight size={18} className="hover:text-neutral-100 transition duration-300 ease-in-out" />
+            </span>
+          </div>
           <div className="flex flex-col">
             <div className="mt-4 flex gap-2">
               <button className="rounded-full bg-neutral-700 px-4 py-2 text-xs">
