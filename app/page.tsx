@@ -7,37 +7,42 @@ import {
   VscArrowRight,
 } from "react-icons/vsc";
 
-import { IoPlayCircle, IoPauseCircle } from "react-icons/io5";
+import { IoPauseCircle } from "react-icons/io5";
 
 import MiniCard from "./components/mini-cards/MiniCard";
 import MadeForYou from "./components/made-for-you/MadeForYou";
 import YourLibrary from "./components/your-library/YourLibrary";
 import { FaFastBackward, FaFastForward } from "react-icons/fa";
 import { FaRepeat, FaShuffle } from "react-icons/fa6";
+import { GoHomeFill, GoSearch } from "react-icons/go";
 
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-row">
       <div className="m-2 flex w-4/12 min-w-[300px] flex-col gap-2 xl:w-[500px]">
-        <section className=" flex flex-col gap-6 rounded-xl bg-neutral-900 p-6">
-          <span className="text-md flex items-center gap-5 font-semibold text-white">
-            <VscHome size={25} />
-            Home
+        <section className="flex flex-col gap-6 bg-sidebar p-6">
+          <span className="flex items-center gap-5 text-white">
+            <GoHomeFill size={30} />
+            <h3 className="font-semibold">Home</h3>
           </span>
-          <span className="text-md flex items-center gap-5 font-semibold text-neutral-400">
-            <VscSearch size={25} />
-            Search
+          <span className="flex items-center gap-5">
+            <GoSearch size={30} />
+            <h3 className="font-semibold text-neutral-400">Search</h3>
           </span>
         </section>
 
-        <section className="h-full rounded-xl bg-neutral-900 p-6">
-          <div className="flex w-full">
-            <span className="text-md w-10/12 font-semibold text-neutral-400">
-              Your Library
-            </span>
-            <span className="flex w-2/12 justify-between items-center text-neutral-400">
-              <VscAdd size={18} className="hover:text-neutral-100 transition duration-300 ease-in-out"/>
-              <VscArrowRight size={18} className="hover:text-neutral-100 transition duration-300 ease-in-out" />
+        <section className="h-full rounded-xl bg-sidebar p-6">
+          <div className="flex w-full justify-between">
+            <h3 className="font-semibold text-neutral-400">Your Library</h3>
+            <span className="flex w-2/12 items-center justify-between text-neutral-400">
+              <VscAdd
+                size={24}
+                className="transition duration-300 ease-in-out hover:text-neutral-100"
+              />
+              <VscArrowRight
+                size={24}
+                className="transition duration-300 ease-in-out hover:text-neutral-100"
+              />
             </span>
           </div>
           <div className="flex flex-col">
