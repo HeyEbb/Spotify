@@ -10,6 +10,7 @@ const config: Config = {
     extend: {
       colors: {
         'sidebar': '#121212',
+        'side_badge' : '#232323',
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

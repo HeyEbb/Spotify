@@ -20,7 +20,7 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-row">
       <div className="m-2 flex w-4/12 min-w-[300px] flex-col gap-2 xl:w-[500px]">
-        <section className="flex flex-col gap-6 bg-sidebar p-6">
+        <section className="bg-sidebar flex flex-col gap-6 p-6">
           <span className="flex items-center gap-5 text-white">
             <GoHomeFill size={30} />
             <h3 className="font-semibold">Home</h3>
@@ -31,7 +31,7 @@ export default function Home() {
           </span>
         </section>
 
-        <section className="h-full rounded-xl bg-sidebar p-6">
+        <section className="bg-sidebar h-full rounded-xl p-6">
           <div className="flex w-full justify-between">
             <h3 className="font-semibold text-neutral-400">Your Library</h3>
             <span className="flex w-2/12 items-center justify-between text-neutral-400">
@@ -47,10 +47,10 @@ export default function Home() {
           </div>
           <div className="flex flex-col">
             <div className="mt-4 flex gap-2">
-              <button className="rounded-full bg-neutral-700 px-4 py-2 text-xs">
+              <button className="bg-side_badge rounded-full px-4 py-2 ">
                 Playlists
               </button>
-              <button className="rounded-full bg-neutral-700 px-4 py-2 text-xs">
+              <button className="bg-side_badge rounded-full px-4 py-2">
                 Albums
               </button>
             </div>
