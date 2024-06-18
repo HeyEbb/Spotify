@@ -37,7 +37,7 @@ h1 {
 }
 
 h2 {
-  @apply text-balance text-3xl font-bold;
+  @apply text-balance text-xl font-semibold;
 }
 
 h3 {
