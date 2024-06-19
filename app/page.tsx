@@ -98,13 +98,16 @@ export default function Home() {
             </div>
           </div>
           <h2 className="mb-4 mt-8">Good morning</h2>
-          <MiniCard />
-          <h2 className="mb-4 mt-8">Made for you</h2>
+          {/* <MiniCard /> */}
+          <code>badges here</code>
+          <h2 className="mb-4 mt-8">Made for Ellis</h2>
           <MadeForYou />
           <h2 className="mb-4 mt-8">Popular Radio</h2>
           <MadeForYou />
         </section>
       </div>
+
+      {/* --------------------------------- footer -------------------------------- */}
       <div className="fixed bottom-0 flex h-20 w-full bg-black">
         <div className="w-4/12"></div>
         <div className="mb-2 mt-2 flex w-5/12 flex-col ">
